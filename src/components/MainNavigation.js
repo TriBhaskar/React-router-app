@@ -7,17 +7,22 @@ function MainNavigation() {
       <nav>
         <ul className={classes.list}>
           <li>
+            {/* Navigation link for Home */}
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              // style={({ isActive }) => ({
+              //   textAlign: isActive ? "center" : "left",
+              // })}
               end
             >
               Home
             </NavLink>
           </li>
           <li>
+            {/* Navigation link for Products */}
             <NavLink
               to="/products"
               className={({ isActive }) =>
