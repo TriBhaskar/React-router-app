@@ -11,11 +11,11 @@ import ProductDetailPage from "./pages/ProductDetail";
 // Create a browser router configuration
 const router = createBrowserRouter([
   {
-    path: "/root",
+    path: "/",
     element: <RootPage />, // Render the RootPage component when the path is "/root"
     errorElement: <ErrorPage />, // Render the ErrorPage component when there is an error
     children: [
-      { path: "", element: <HomePage /> }, // Render the HomePage component when the path is empty
+      { index: true, element: <HomePage /> }, // path: ""  Render the HomePage component when the path is empty
       { path: "products", element: <ProductsPage /> }, // Render the ProductsPage component when the path is "/products"
       { path: "products/:productId", element: <ProductDetailPage /> }, // Render the ProductDetailPage component when the path is "/products/:productId"
     ],
