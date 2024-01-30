@@ -9,7 +9,7 @@ function MainNavigation() {
           <li>
             {/* Navigation link for Home */}
             <NavLink
-              to="/"
+              to=""
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
@@ -24,7 +24,7 @@ function MainNavigation() {
           <li>
             {/* Navigation link for Products */}
             <NavLink
-              to="/products"
+              to="products"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
